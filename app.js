@@ -28,7 +28,7 @@ class Tour {
         return this.getPrice - ((this.getPrice * this.tax)/100) //task6
     }
 
-    increasedays = (nr) => {
+    increasedays = (nr) => { //task5
         this.days += nr
     }
 
@@ -47,9 +47,9 @@ const TourInfo = (Tour) => {
 
 const theBiggestTour = () => {
     if (Tour1.getPrice > Tour2.getPrice) {
-        console.log(`Tour ${Tour1.name + " has a price of" + Tour1.costOneDay} price difference is ${Tour1.getPrice - Tour2.getPrice} and is = ${Tour1.getPrice}`)
+        console.log(`Tour ${Tour1.name + " has a price of" + Tour1.costOneDay} ,price difference is ${Tour1.getPrice - Tour2.getPrice} and total price is = ${Tour1.getPrice}`)
     }else{
-        console.log(`Tour ${Tour2.name + "has a price of " + Tour2.costOneDay} ,price difference is ${Tour2.getPrice - Tour1.getPrice} and is = ${Tour2.getPrice}`)
+        console.log(`Tour ${Tour2.name + " has a price of " + Tour2.costOneDay} ,price difference is ${Tour2.getPrice - Tour1.getPrice} and total price is = ${Tour2.getPrice}`)
     }
 }
 
